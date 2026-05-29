@@ -118,16 +118,28 @@ function StackNovaWebsite() {
       </section>
 
       <section id="contact" className="px-6 py-24 md:px-16">
-        <div className="max-w-4xl mx-auto rounded-[2rem] bg-gradient-to-r from-cyan-500 to-blue-600 p-12 text-black shadow-2xl">
-          <h2 className="text-4xl font-bold text-center">Contact StackNova</h2>
-          <div className="mt-8 grid gap-4">
-            <input className="p-4 rounded-xl w-full" placeholder="Full Name" />
-            <input className="p-4 rounded-xl w-full" placeholder="Email Address" />
-            <textarea className="p-4 rounded-xl min-h-[140px] w-full" placeholder="Your Message" />
-            <button className="px-8 py-3 rounded-2xl bg-black text-white font-semibold">Send Message</button>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto rounded-[2rem] bg-gradient-to-r from-cyan-500 to-blue-600 p-12 text-black shadow-2xl">
+    <h2 className="text-4xl font-bold text-center">Contact StackNova</h2>
+    
+    {/* 1. Wrapped the inputs in a form tag pointing to your email */}
+    <form 
+      action="mailto:stacknovang@gmail.com" 
+      method="POST" 
+      encType="text/plain" 
+      className="mt-8 grid gap-4"
+    >
+      {/* 2. Added 'name' attributes so the email app knows which text belongs to what */}
+      <input name="Name" className="p-4 rounded-xl w-full" placeholder="Full Name" required />
+      <input name="Email" type="email" className="p-4 rounded-xl w-full" placeholder="Email Address" required />
+      <textarea name="Message" className="p-4 rounded-xl min-h-[140px] w-full" placeholder="Your Message" required />
+      
+      {/* 3. Changed button to type="submit" */}
+      <button type="submit" className="px-8 py-3 rounded-2xl bg-black text-white font-semibold hover:opacity-90 transition-opacity">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
 
       <footer className="px-6 py-10 md:px-16 border-t border-slate-800 text-slate-400">
         {/* Changed grid layout to md:grid-cols-4 to host the new column cleanly */}
