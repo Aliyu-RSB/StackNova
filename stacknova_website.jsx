@@ -145,7 +145,7 @@ function StackNovaWebsite() {
           <h2 className="text-4xl font-bold mb-12">Products</h2>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {products.map((product) => (
-              <div key={product.title} className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl">
+              <div key={product.title} className="rounded-3xl border border-slate-800 bg-slate-900 p-8 shadow-xl transition-transform duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-slate-700 hover:bg-slate-900/95 cursor-pointer">
                 <h3 className="flex items-center gap-3 text-xl font-semibold text-cyan-300">
                   <span aria-hidden="true" className="text-2xl">{product.icon}</span>
                   {product.title}
