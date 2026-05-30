@@ -41,7 +41,7 @@ function StackNovaWebsite() {
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/90 border-b border-slate-800 px-6 py-4 md:px-16">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
           <a href="index.html" className="flex items-center gap-3 text-cyan-400">
-            <img src="/favicon.png" alt="StackNova logo" className="h-10 w-10 rounded-xl border border-slate-700 bg-slate-900" />
+            <img src="/fav.png" alt="StackNova logo" className="h-10 w-10 rounded-xl border border-slate-700 bg-slate-900" />
             <span className="text-2xl font-bold">StackNova</span>
           </a>
           <div className="flex items-center gap-4">
@@ -93,6 +93,7 @@ function StackNovaWebsite() {
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-blue-600/10 to-transparent" />
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.15),transparent_35%)]" />
         <div className="relative mx-auto max-w-6xl text-center">
+          <img src="/fav.png" alt="StackNova favicon" className="mx-auto mb-6 h-24 w-24 rounded-xl border border-slate-700 bg-slate-900" />
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold">Building Smarter Digital Solutions</h1>
           <p className="mt-6 text-slate-300 text-base sm:text-lg max-w-3xl mx-auto">
             StackNova helps businesses scale through software engineering, AI automation,
