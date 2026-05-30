@@ -47,12 +47,12 @@ function StackNovaWebsite() {
           <div className="flex items-center gap-4">
             <div className="hidden md:flex gap-8 text-slate-300 items-center">
               <a href="about.html">About</a>
-              <div className="relative group">
+              <div className="relative group" tabIndex="0">
                 <button className="inline-flex items-center gap-2 text-slate-300 hover:text-white">
                   I.T Services
                   <span className="text-lg">▾</span>
                 </button>
-                <div className="absolute left-0 top-full mt-2 hidden w-44 flex-col rounded-3xl border border-slate-800 bg-slate-950 p-3 shadow-xl group-hover:flex">
+                <div className="absolute left-0 top-full mt-2 hidden w-44 flex-col rounded-3xl border border-slate-800 bg-slate-950 p-3 shadow-xl group-hover:flex group-focus-within:flex z-50">
                   <a href="services.html" className="rounded-2xl px-3 py-2 text-left text-slate-300 hover:bg-slate-900 hover:text-white">Services</a>
                   <a href="product.html" className="rounded-2xl px-3 py-2 text-left text-slate-300 hover:bg-slate-900 hover:text-white">Products</a>
                 </div>
